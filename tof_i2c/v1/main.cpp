@@ -12,7 +12,8 @@ int main()
 
     uint16_t distance;
 
-    while (true) {
+    while (true)
+    {
         distance = tof_sensor.get_distance(); // Get distance
         tof_sensor.to_string(&distance);
         sleep_ms(1000); // Wait 1 second before the next read

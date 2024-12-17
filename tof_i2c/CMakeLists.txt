@@ -13,7 +13,7 @@ set(CMAKE_CXX_STANDARD 17)
 # Initialize the SDK
 pico_sdk_init()
 
-add_executable(tof_i2c main.cpp)
+add_executable(tof_i2c ./v2/main2.cpp ./v2/tof.cpp ./v2/i2c_sensors.cpp)
 
 target_include_directories(tof_i2c PRIVATE ${CMAKE_CURRENT_LIST_DIR})
  
